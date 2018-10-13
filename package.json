@@ -1,6 +1,6 @@
 {
   "name": "react-fmp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component measures time the first meaningful paint",
   "main": "dest/reactFMP.js",
   "scripts": {
@@ -33,9 +33,10 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "flow-bin": "^0.82.0"
+    "flow-bin": "^0.82.0",
+    "react": "^16.5.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.5.2"
   }
 }
