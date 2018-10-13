@@ -2,10 +2,10 @@
   "name": "react-fmp",
   "version": "1.0.0",
   "description": "React component measures time the first meaningful paint",
-  "main": "src/index.js",
+  "main": "dest/reactFMP.js",
   "scripts": {
     "clean": "rm -rf dest",
-    "build": "babel src -d dest",
+    "build": "yarn clean && babel src -d dest",
     "test:watch": "yarn run test -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "yarn clean && yarn build"
@@ -28,7 +28,14 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "flow-bin": "^0.82.0"
+  },
+  "dependencies": {
+    "react": "^16.5.2"
   }
 }
